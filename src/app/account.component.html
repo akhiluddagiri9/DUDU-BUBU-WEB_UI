@@ -1,0 +1,77 @@
+<button class="account-toggle" type="button" aria-haspopup="dialog" [disabled]="loading()"
+        [attr.aria-label]="user() ? 'Open your profile' : null" (click)="open(accountDialog)">
+  @if (user(); as profile) {
+    @if (profile.pictureUrl) {
+      <img class="avatar" [src]="profile.pictureUrl" alt="" />
+    } @else {
+      <span class="avatar" aria-hidden="true">{{ initial() }}</span>
+    }
+    <span class="profile-label">Profile</span>
+  } @else {
+    Sign in
+  }
+</button>
+
+<dialog #accountDialog class="account-dialog" aria-labelledby="account-title">
+  <button class="icon-button modal-close" type="button" aria-label="Close account dialog"
+          (click)="accountDialog.close()">×</button>
+  <h2 id="account-title">{{ title() }}</h2>
+
+  @if (user(); as profile) {
+    <div class="profile-summary">
+      @if (profile.pictureUrl) {
+        <img class="avatar profile-avatar" [src]="profile.pictureUrl" alt="Your profile picture" />
+      } @else {
+        <span class="avatar profile-avatar" aria-hidden="true">{{ initial() }}</span>
+      }
+      <div class="profile-identity">
+        <strong>{{ profile.name }}</strong>
+        <span>{{ profile.email }}</span>
+      </div>
+    </div>
+    <div class="picture-actions">
+      <label class="picture-label" for="profile-picture">Profile picture</label>
+      <input #pictureInput id="profile-picture" type="file" accept="image/jpeg,image/png"
+             aria-describedby="picture-help" [disabled]="busy()" (change)="uploadPicture(pictureInput)" />
+      <p id="picture-help">JPEG or PNG, up to 768 KB. The picture will be cropped to a square.</p>
+      @if (profile.pictureUrl) {
+        <button class="account-link" type="button" [disabled]="busy()" (click)="removePicture()">Remove picture</button>
+      }
+    </div>
+    <button class="button sign-out" type="button" [disabled]="busy()" (click)="logout(accountDialog)">Sign out</button>
+  } @else {
+    <form #credentials="ngForm" class="credentials" (ngSubmit)="authenticate(credentials)">
+      <div class="form-grid">
+        @if (registering()) {
+          <label class="full">Name
+            <input type="text" name="name" ngModel autocomplete="name" maxlength="80" required />
+          </label>
+        }
+        <label class="full">Email
+          <input type="email" name="email" ngModel email autocomplete="username" maxlength="254" required autofocus />
+        </label>
+        <label class="full">Password
+          <input type="password" name="password" ngModel required maxlength="128"
+                 [attr.autocomplete]="registering() ? 'new-password' : 'current-password'"
+                 [minlength]="registering() ? 8 : 1"
+                 [attr.aria-describedby]="registering() ? 'password-help' : null" />
+        </label>
+      </div>
+      @if (registering()) {
+        <p id="password-help">Use at least 8 characters.</p>
+      }
+      <button class="button button-primary account-submit" type="submit" [disabled]="busy() || credentials.invalid">
+        {{ busy() ? 'Please wait…' : title() }}
+      </button>
+      <p class="switch-mode">
+        {{ registering() ? 'Already have an account?' : 'New to Dudu Bubu?' }}
+        <button class="account-link" type="button" [disabled]="busy()" (click)="switchMode(credentials)">
+          {{ registering() ? 'Sign in' : 'Create an account' }}
+        </button>
+      </p>
+    </form>
+  }
+  @if (error()) {
+    <p class="error-message account-feedback" role="alert">{{ error() }}</p>
+  }
+  <p class="account-feedback status-message" role="status">{{ status() }}</p>

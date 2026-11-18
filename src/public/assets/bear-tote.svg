@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+      <rect width="600" height="600" rx="32" fill="#f4e8de"/><circle cx="470" cy="125" r="118" fill="#fff" opacity=".18"/><circle cx="95" cy="500" r="160" fill="#fff" opacity=".2"/><g fill="#fff" opacity=".9"><path d="M95 140 l9 24 24 9 -24 9 -9 24 -9 -24 -24 -9 24 -9z"/><path d="M492 390 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7z"/></g><path d="M205 178 Q202 55 300 55 Q400 55 395 178" stroke="#d7bca3" stroke-width="29" fill="none"/><path d="M132 165 Q300 140 468 165 L494 513 Q302 553 103 511 Z" fill="#fffaf0" stroke="#d8bca4" stroke-width="10"/><g transform="translate(87 200) scale(0.72)">
+    <g transform="translate(237 287) scale(0.72)">
+        <ellipse cx="-61" cy="-87" rx="33" ry="35" fill="#f6eee0"/><ellipse cx="61" cy="-87" rx="33" ry="35" fill="#f6eee0"/>
+        <ellipse cx="-62" cy="-87" rx="16" ry="19" fill="#f1b4b7" opacity=".65"/><ellipse cx="62" cy="-87" rx="16" ry="19" fill="#f1b4b7" opacity=".65"/>
+        <ellipse cx="0" cy="87" rx="91" ry="96" fill="#f6eee0"/><ellipse cx="0" cy="107" rx="58" ry="55" fill="#fffaf0" opacity=".8"/>
+        <ellipse cx="-76" cy="151" rx="26" ry="22" fill="#f6eee0"/><ellipse cx="76" cy="151" rx="26" ry="22" fill="#f6eee0"/>
+        <ellipse cx="-82" cy="48" rx="28" ry="52" fill="#f6eee0" transform="rotate(-23 -82 48)"/><ellipse cx="82" cy="48" rx="28" ry="52" fill="#f6eee0" transform="rotate(23 82 48)"/><ellipse cx="0" cy="-30" rx="103" ry="97" fill="#f6eee0"/>
+        <ellipse cx="-38" cy="-36" rx="7.4" ry="9.1" fill="#3f3333"/><ellipse cx="38" cy="-36" rx="7.4" ry="9.1" fill="#3f3333"/>
+        <ellipse cx="-67" cy="-8" rx="20" ry="10" fill="#f3a9aa" opacity=".8"/><ellipse cx="67" cy="-8" rx="20" ry="10" fill="#f3a9aa" opacity=".8"/>
+        <ellipse cx="0" cy="-13" rx="27" ry="19" fill="#fffaf0"/><path d="M-9 -19 Q0 -26 9 -19 Q7 -11 0 -8 Q-7 -11 -9 -19" fill="#a16a68"/>
+        <path d="M0 -9 v7 M-13 -2 Q-7 8 0 4 Q7 8 13 -2" stroke="#a16a68" fill="none" stroke-linecap="round" stroke-width="3.4"/>
+        <ellipse cx="-40" cy="-41" rx="2.5" ry="3.7" fill="#fff"/><ellipse cx="36" cy="-41" rx="2.5" ry="3.7" fill="#fff"/><g transform="translate(65 -95) rotate(17)"><path d="M0 0 C-42 -30 -42 26 0 0 C42 -28 42 25 0 0" fill="#ec8daf"/><circle r="9" fill="#cf678d"/></g></g>
+    <g transform="translate(355 285) scale(0.75)">
+        <ellipse cx="-61" cy="-87" rx="33" ry="35" fill="#c69572"/><ellipse cx="61" cy="-87" rx="33" ry="35" fill="#c69572"/>
+        <ellipse cx="-62" cy="-87" rx="16" ry="19" fill="#b97575" opacity=".65"/><ellipse cx="62" cy="-87" rx="16" ry="19" fill="#b97575" opacity=".65"/>
+        <ellipse cx="0" cy="87" rx="91" ry="96" fill="#c69572"/><ellipse cx="0" cy="107" rx="58" ry="55" fill="#fff0dd" opacity=".8"/>
+        <ellipse cx="-76" cy="151" rx="26" ry="22" fill="#c69572"/><ellipse cx="76" cy="151" rx="26" ry="22" fill="#c69572"/>
+        <ellipse cx="-82" cy="48" rx="28" ry="52" fill="#c69572" transform="rotate(-23 -82 48)"/><ellipse cx="82" cy="48" rx="28" ry="52" fill="#c69572" transform="rotate(23 82 48)"/><ellipse cx="0" cy="-30" rx="103" ry="97" fill="#c69572"/>
+        <ellipse cx="-38" cy="-36" rx="7.4" ry="9.1" fill="#3f3333"/><ellipse cx="38" cy="-36" rx="7.4" ry="9.1" fill="#3f3333"/>
+        <ellipse cx="-67" cy="-8" rx="20" ry="10" fill="#f3a9aa" opacity=".8"/><ellipse cx="67" cy="-8" rx="20" ry="10" fill="#f3a9aa" opacity=".8"/>
+        <ellipse cx="0" cy="-13" rx="27" ry="19" fill="#fff0dd"/><path d="M-9 -19 Q0 -26 9 -19 Q7 -11 0 -8 Q-7 -11 -9 -19" fill="#a16a68"/>
+        <path d="M0 -9 v7 M-13 -2 Q-7 8 0 4 Q7 8 13 -2" stroke="#a16a68" fill="none" stroke-linecap="round" stroke-width="3.4"/>
+        <ellipse cx="-40" cy="-41" rx="2.5" ry="3.7" fill="#fff"/><ellipse cx="36" cy="-41" rx="2.5" ry="3.7" fill="#fff"/></g>
+    <path transform="translate(301 200) rotate(-3) scale(1.15)" d="M0 11 C-46 -17 -27 -49 0 -28 C27 -49 46 -17 0 11Z" fill="#e88ba6"/></g><text x="300" y="478" font-family="Arial,sans-serif" font-size="25" text-anchor="middle" font-weight="bold" fill="#aa7d71" letter-spacing="3">HUG CLUB</text>
+    </svg>
