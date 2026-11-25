@@ -6,7 +6,7 @@ COPY angular.json tsconfig*.json ./
 COPY src/ src/
 RUN npm run build
 
-FROM nginx:stable-alpine
+FROM nginx:stable-alpine-slim AS runtime
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/dist/dudu-bubu/browser/ /usr/share/nginx/html/
 EXPOSE 80

@@ -1,0 +1,1 @@
+*{box-sizing:border-box}html,body{min-width:320px;min-height:100%;margin:0}body{font-family:Arial,Helvetica,sans-serif}.dummy-page{display:grid;min-height:100vh;place-items:center;padding:24px;text-align:center}.dummy-page h1{margin:0;font-size:clamp(3rem,12vw,9rem);font-weight:900;line-height:1;letter-spacing:-.04em}
